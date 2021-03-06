@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Framework - Igor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+  
+    footer {
+      background-color: #000000;
+      color: white;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://frwk.com.br/" target="_blank">Framework</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">HOME</a></li>
+        <li><a href="#">POSTAGEM</a></li>
+        <li><a href="#">ALBUNS</a></li>
+        <li><a href="#">TO-DOs</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Descrição</h1>      
+    <p>Código feito para exibir as API's de POSTAGEM, ALBUNS e TO-DOs</p>
+  </div>
+</div>
+
+<div>
+  <hr>
+  <h3>O que é uma API?</h3>
+  <h4>API é um conjunto de rotinas e padrões de programação para acesso a um aplicativo de software ou plataforma baseado na Web. A sigla API refere-se ao termo em inglês 
+    "Application Programming Interface" que significa em tradução para o português "Interface de Programação de Aplicativos".
+  <hr>
+  <br>
+  </h4>
+</div>
+
+<div class="container text-center">
+  <h1>Postagem</h1>
+</div>
+<div *ngFor="let i of images">
+    <h4>Título: {{ i.title }}</h4>
+    <p>ID: {{ i.id }}</p>
+    <p>User ID: {{ i.userId }}</p>
+    <p>Texto: {{ i.body }}</p>
+</div>
+
+<div class="container text-center">
+  <h1>Albuns</h1>
+</div>
+
+<div *ngFor="let i of images2">
+    <h3>Título: {{ i.title }}</h3>
+    <p>ID: {{ i.id }}</p>
+    <p>User ID: {{ i.userId }}</p>
+</div>
+
+<div class="container text-center">
+  <h1>TO-DOs</h1>
+</div>
+
+<div *ngFor="let i of images3">
+    <h3>Título: {{ i.title }}</h3>
+    <p>Completed: {{ i.Completed }}</p>
+    <p>ID: {{ i.id }}</p>
+    <p>User ID: {{ i.userId }}</p>
+</div>
+
+
+
+
+<div class="footerbranco">
+<div class="container">
+<div style="text-align:center">
+      <h2>Desenvolvedor</h2>
+</div>
+</div>
+                        
+<div class="container">
+<div style="text-align:center">
+			<h4 class="title font-medium">Igor Patrocínio</h4>
+<div>
+
+</div>                            
+</div>
+</div>
+</div>	
+
+<br>
+
+<footer class="container-fluid">
+  <div class="container text-center">
+					<p>&copy; 2021 | IFP</p>
+				</div>
+</footer>
+
